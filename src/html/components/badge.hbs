@@ -1,0 +1,15 @@
+<div class='badge' data-module="badge">
+  {{#ifCond variant "===" "dot"}}
+  <span class="badge__content badge__content--dot badge__content--{{position}}" {{#if backgroundColor}}
+    style="background-color: {{backgroundColor}};" {{/if}}></span>
+  {{else}}
+  <span class="badge__content badge__content--{{position}}" data-value={{badgeContent}} data-max={{max}} {{#if
+    backgroundColor}} style="background-color: {{backgroundColor}};" {{/if}}>
+    {{badgeContent}}
+  </span>
+  {{/ifCond}}
+
+  <button class="badge__button" aria-label="A clickable icon with a number badge">
+    {{>svg name=icon}}
+  </button>
+</div>

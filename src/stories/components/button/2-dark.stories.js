@@ -142,6 +142,7 @@ const DisabledLink = story.build(
   },
   'padded'
 );
+
 DisabledLink.storyName = 'Disabled (Link)';
 
 export {
